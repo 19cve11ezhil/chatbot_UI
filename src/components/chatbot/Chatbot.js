@@ -8,6 +8,7 @@ const ChatApp = () => {
   const chatEndRef = useRef(null);
 
   const api_url = process.env.REACT_APP_URL
+  console.log(api_url)
 
   useEffect(() => {
     const storedMessages = JSON.parse(localStorage.getItem('messages'));
